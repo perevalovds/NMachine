@@ -1,0 +1,46 @@
+NMachine
+Генератор ремиксов, где доли музыки генерируются 
+с помощью Wavenet или подобных нейросетей-автоэнкодеров.
+
+============================================
+Делаю "простой" конволюционный автоэнкодер в 2D.
+А потом сделать на основе Wavenet.
+
+
+Virtual env:
+python -m venv d:\EndlessInstruments\NMachine\venv-autoenc1
+затем в Scripts/Activate.bat для активации
+
+pytorch:
+https://pytorch.org/get-started/locally/
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+
+Проверка CUDA:
+import torch
+torch.cuda.is_available()   при этом у меня CUDA 11.6, а написано, что поддерживает 11.3.
+
+
+Туториалы pytorch:
+https://pytorch.org/tutorials/index.html
+
+
+Torchaudio в его составе, про считывание WAV:
+https://pytorch.org/audio/stable/tutorials/audio_io_tutorial.html
+
+Простой автоэнкодер
+https://datahacker.rs/003-gans-autoencoder-implemented-with-pytorch/
+
+NSynth Magenta с wavenet и baseline:
+https://github.com/magenta/magenta/tree/main/magenta/models/nsynth
+   В папке models еще много интересного, например, генерация ритмов и мелодий.
+   но нас интересуют автоэнкодеры baseline и wavenet в папке models/nsynts.
+   
+   
+============================================
+Pytorch Wavenet   
+Скачал pytorch-wavenet: https://github.com/perevalovds/pytorch-wavenet   
+   
+Редактор ipynb-файлов (jupiter notebooks): https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+   
+
+============================================
